@@ -14,11 +14,15 @@ def sort_array(data)
       j -= 1
     end
   end
-  data
+
+  data = data.each do|d|
+    p ('a'..'z').to_a & d
+  end
 end
 
 
 data1 = [['a','c','b','e','d'],['g','e','f']]
 data2 = [['g','h','i','j'],['a','c','b','e','d'],['g','e','f']]
-p sort_array(data1)
-p sort_array(data2)
+sort_array(data1)
+puts "==========="
+sort_array(data2)
