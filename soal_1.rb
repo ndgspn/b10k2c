@@ -30,7 +30,7 @@ class Biodata
   end
 end
 
-biodata1 = Biodata.new("Jon", "Bogor", "tidur begadang, main", true, "smk infokom, stmik pranata", "tidur, malas").get_biodata.to_json
-biodata2 = Biodata.new("Adul", "Jonggol", "olahjiwa, koding kadang-kadang", false, "smk infokom, stmik pranata", "tidur, malas").get_biodata.to_json
+biodata1 = Biodata.new("Jon", "Bogor", "tidur begadang, main", true, "smk infokom, stmik pranata", "ruby, html").get_biodata.to_json
+biodata2 = Biodata.new("Adul", "Jonggol", "olahjiwa, koding kadang-kadang", false, "smk infokom, stmik pranata", "java, javascript").get_biodata.to_json
 puts biodata1
 puts biodata2
