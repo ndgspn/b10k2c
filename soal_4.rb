@@ -1,5 +1,6 @@
 # Referensi algoritma
 # https://medium.com/@limichelle21/read-it-learn-it-build-it-sorting-algorithms-in-ruby-ead04b04baa6
+
 def sort_array(data)
   (data.length).times do |j|
     while j > 0
