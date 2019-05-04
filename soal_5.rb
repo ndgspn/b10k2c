@@ -26,7 +26,6 @@ class RandomString
 end
 
 r = RandomString.new
-puts r.generate(3)
-puts "======"
-puts r.generate(5)
+p r.generate(3)
+p r.generate(5)
 
