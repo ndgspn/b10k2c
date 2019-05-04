@@ -15,6 +15,11 @@ class Biodata
     @skills     = skills.split(',')
   end
 
+  def call
+    get_biodata.to_json
+  end
+
+  private
   def get_biodata
     data = {
       "name": name,
@@ -30,7 +35,7 @@ class Biodata
   end
 end
 
-biodata1 = Biodata.new("Jon", "Bogor", "tidur begadang, main", true, "smk infokom, stmik pranata", "ruby, html").get_biodata.to_json
-biodata2 = Biodata.new("Adul", "Jonggol", "olahjiwa, koding kadang-kadang", false, "smk infokom, stmik pranata", "java, javascript").get_biodata.to_json
+biodata1 = Biodata.new("Jon", "Bogor", "tidur begadang, main", true, "smk infokom, stmik pranata", "ruby, html").call
+biodata2 = Biodata.new("Adul", "Jonggol", "olahjiwa, koding kadang-kadang", false, "smk infokom, stmik pranata", "java, javascript").call
 puts biodata1
 puts biodata2
