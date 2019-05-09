@@ -9,7 +9,7 @@ class RandomString
     end
     ran_arr
   end
-  
+
   private
 
   def random(length, charset)

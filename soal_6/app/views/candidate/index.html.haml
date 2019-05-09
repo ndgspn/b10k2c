@@ -1,0 +1,14 @@
+- @candidates.each do |c|
+  %table.table
+    %tbody
+      %tr
+        %td
+          = c.name
+        %td
+        %td
+          = link_to candidate_path(c), method: 'put' do
+            %button.btn.btn-primary Vote
+      %tr
+        %td
+          Perolehan suara:
+          = c.earned_vote

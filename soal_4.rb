@@ -1,6 +1,6 @@
 # Referensi algoritma
 # https://medium.com/@limichelle21/read-it-learn-it-build-it-sorting-algorithms-in-ruby-ead04b04baa6
-# Untuk kode ini menggunakan metode `Insertion Sort`, 
+# Untuk kode ini menggunakan metode `Insertion Sort`,
 # masih coba dipahami karena biasanya langsung pakai method .sort bawaan Ruby
 
 def sort_array(data)
